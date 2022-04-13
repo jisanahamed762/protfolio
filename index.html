@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jisan - Portfolio</title>
+    <link rel="icon" href="images/icon.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="antialiased dark-mode:bg-gray-900">
+            <div class="w-full text-gray-700 dark-mode:text-gray-200 dark-mode:bg-gray-800">
+                <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl p-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                    <div class="flex flex-row items-center justify-between">
+                        <a href="#" class="text-lg font-extrabold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline text-white">jisan</a>
+                        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-white">
+                                <path x-show="!open" fill-rule="text-white" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                <path x-show="open" fill-rule="text-white" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden bg-gray-100 rounded-xl md:bg-inherit pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-black md:text-white border-b-2 md:border-0 transition-all" href="/#about">About</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-black md:text-white border-b-2 md:border-0 transition-all" href="/#service">Service</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-black md:text-white border-b-2 md:border-0 transition-all" href="/#protfolio">Portfolio</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-black md:text-white border-b-2 md:border-0 transition-all" href="/#contact">Contact</a>    
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- banner start --> 
+    <section id="banner">
+        <div class="container banner m-auto">
+            <div class="px-4 sm:px-0 wow fadeInDown" data-wow-duration="3s">
+                <h3 class="text-white text-lg md:text-2xl tracking-widest md:pb-5">HELLO, I'M JISAN AHMED</h3>
+                <h1 class="text-4xl md:text-7xl text-white font-bold">WEB <span class="type uppercase"></span></h1>
+            </div>
+        </div>
+        <svg class="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill: #fff;">
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+    </div>
+    </section>
+    <!-- banner end -->
+    <!-- about start -->
+    <section id="about">
+        <div class="container m-auto py-10 md:flex lg:py-20">
+            <div class="w-2/4 mx-auto md:w-5/12">
+                <img src="images/about.png" alt="about">
+            </div>
+            <div class="w-full px-3 md:w-7/12 md:px-5">
+                <h2 class="text-center text-3xl font-bold pt-8 pb-4 md:text-left">Hello! My Name is Jisan Ahmed</h2>
+                <p class="mb-2 lg:mb-5 font-light leading-8">I'm 19 years old creative web designer based in bangladesh, specializing in User Interface Design. I build clean, appealing, and functional interfaces which comply with the latest web standards.</p>
+                <p class="mb-2 lg:mb-5 font-light leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="hidden mb-5 font-light leading-8 xl:block 2xl:mb-16">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde maxime tempore, totam adipisci ipsa optio molestias numquam praesentium consectetur aliquam, eum sit, laudantium debitis reiciendis dolor quibusdam nobis? Exercitationem eaque possimus praesentium, iure harum, debitis vero reiciendis quasi omnis ducimus ab minima dolores eum sequi repellendus quo iste libero quisquam.</p>
+                <div class="flex">
+                    <h6 class="text-xl font-semibold pt-1 pr-2">Follow Me:</h6>
+                    <ul class="flex space-x-3">
+                        <li class="w-10 h-10 bg-gray-100 flex items-center justify-center rounded-full hover:bg-gray-300 transition filter drop-shadow-xl">
+                            <a href="https://www.facebook.com/jisanahamed762" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="w-10 h-10 bg-gray-100 flex items-center justify-center rounded-full hover:bg-gray-300 transition filter drop-shadow-xl">
+                            <a href="https://github.com/jisanahamed762" target="-blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="w-10 h-10 bg-gray-100 flex items-center justify-center rounded-full hover:bg-gray-300 transition filter drop-shadow-xl">
+                            <a href="https://www.instagram.com/jisanahamed762" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+    <!-- service start -->
+    <section id="service" class="bg-[#e1e8ed] pb-28">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill: #fff;">
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+        <div class="container m-auto">
+            <div class="head wow fadeInUp">
+                <h2 class="text-center text-5xl font-semibold">Service</h2>
+            </div>
+            <div class="pt-12 flex flex-wrap md:justify-between">
+                <div class="content mx-auto w-2/5 lg:w-1/5 py-5 lg:p-5 bg-white rounded-md mt-3 wow slideInLeft">
+                    <div class="icon w-16 h-16 bg-[#e1e8ed] rounded-full m-auto flex justify-center items-center mt-5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-medium text-center py-3">Web design</h3>
+                    <p class="text-center font-light leading-10 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="content mx-auto w-2/5 lg:w-1/5 py-5 lg:p-5 bg-white rounded-md mt-3 wow fadeInUp" data-wow-duration="3s">
+                    <div class="icon w-16 h-16 bg-[#e1e8ed] rounded-full m-auto flex justify-center items-center mt-5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-medium text-center py-3">Graphic</h3>
+                    <p class="text-center font-light leading-10 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="content mx-auto w-2/5 lg:w-1/5 py-5 lg:p-5 bg-white rounded-md mt-3 wow fadeInUp" data-wow-duration="3s">
+                    <div class="icon w-16 h-16 bg-[#e1e8ed] rounded-full m-auto flex justify-center items-center mt-5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-medium text-center py-3">Photography</h3>
+                    <p class="text-center font-light leading-10 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="content mx-auto w-2/5 lg:w-1/5 py-5 lg:p-5 bg-white rounded-md mt-3 wow slideInRight">
+                    <div class="icon w-16 h-16 bg-[#e1e8ed] rounded-full m-auto flex justify-center items-center mt-5 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-medium text-center py-3">Branding</h3>
+                    <p class="text-center font-light leading-10 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service end -->
+    <!-- protfolio start -->
+    <section id="protfolio">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill: #e1e8ed;">
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+        <div class="container m-auto">
+            <div class="head wow fadeInUp" data-wow-duration="3s">
+                <h2 class="text-center text-5xl font-semibold">Protfolio</h2>
+            </div>
+            <div class="buttons mx-auto w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12 mt-20 mb-10 flex justify-between flex-wrap wow fadeInUp" data-wow-duration="3s">
+                <button type="button" data-filter="all" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">All</button>
+                <button type="button" data-filter=".web" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">Web design</button>
+                <button type="button" data-filter=".gra" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">Graphic</button>
+                <button type="button" data-filter=".photo" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">Photography</button>
+            </div>
+            <div class="protfolio w-full 2xl:w-10/12 m-auto md:flex md:flex-wrap mb-20">
+                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix web">
+                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio2.jpeg"><img src="images/protfolio2.jpeg" alt="protfolio2"></a>
+                </div>
+                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix gra">
+                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio.jpeg"><img src="images/protfolio.jpeg" alt="protfolio"></a>
+                </div>
+                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix web">
+                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio5.jpeg"><img src="images/protfolio5.jpeg" alt="protfolio5"></a>
+                </div>
+                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix photo">
+                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio4.jpeg"><img src="images/protfolio4.jpeg" alt="protfolio4"></a>
+                </div>
+                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix web">
+                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio3.jpeg"><img src="images/protfolio3.jpeg" alt="protfolio3"></a>
+                </div>
+                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix gra">
+                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio6.jpeg"><img src="images/protfolio6.jpeg" alt="protfolio6"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- protfolio end -->
+    <!-- contact start -->
+    <section id="contact" class="bg-[#e1e8ed]">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill: #fff;">
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+        <div class="container m-auto wow fadeInUp" data-wow-duration="3s">
+            <div class="head">
+                <h2 class="text-center text-5xl font-semibold">Contact</h2>
+            </div>
+            <div class="contact w-8/12 m-auto py-16 lg:flex wow fadeInUp" data-wow-duration="3s">
+                <div class="w-full lg:w-8/12">
+                    <form class="mx-2" action="#" method="post">
+                        <div class="lg:flex justify-between mb-4">
+                            <input class="w-full p-2 mb-4 lg:mb-0 lg:mr-2 rounded-md transition-all" type="text" placeholder="Name">
+                            <input class="w-full p-2 lg:ml-2 rounded-md transition-all" type="email" placeholder="E-mail">
+                        </div>
+                        <textarea class="w-full p-2 rounded-md" rows="7" placeholder="Message"></textarea>
+                        <button class="mt-4 p-4 bg-[#111] text-white text-xs font-medium border-2 border-[#111] hover:bg-inherit hover:text-[#111] hover:font-bold transition-all" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div class="w-full lg:w-4/12 mt-6 lg:mt-0 px-5">
+                    <div class="mb-4">
+                        <h4 class="text-center lg:text-left text-lg font-semibold pb-2">PHONE</h4>
+                        <a class="text-center block lg:inline font-light" href="tel:01733010484">01733010484</a>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-center lg:text-left text-lg font-semibold pb-2">EMAIL</h4>
+                        <a class="text-center block lg:inline font-light" href="mailto:jisanahamed762@gmail.com">jisanahamed762@gmail.com</a>
+                    </div>
+                    <div>
+                        <h4 class="text-center lg:text-left text-lg font-semibold pb-2">ADDRESS</h4>
+                        <a class="text-center block lg:inline font-light" href="https://www.google.com/maps/place/Shekher+Jayga+Bazar/@23.7507026,90.4596732,15z/data=!4m5!3m4!1s0x3755b7ee7eff9fdb:0xfc8bb4feb658bcf8!8m2!3d23.7449438!4d90.4618796" target="_blank">Shekher Jayga Bazar, Khilgoan, Dhaka</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact end -->
+    <!-- footer start -->
+    <footer class="bg-black py-28">
+        <div class="container m-auto">
+            <div class="footer w-4/12 m-auto wow fadeInUp" data-wow-duration="3s">
+                <h3 class="text-center text-4xl font-bold text-white pb-5">JISAN</h3>
+                <ul class="flex justify-center space-x-3">
+                    <li class="w-10 h-10 bg-[#2B2B2B] flex items-center justify-center text-white hover:bg-white hover:text-black  transition-all">
+                        <a href="https://www.facebook.com/jisanahamed762" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="w-10 h-10 bg-[#2B2B2B] flex items-center justify-center text-white hover:bg-white hover:text-black  transition-all">
+                        <a href="https://github.com/jisanahamed762" target="-blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="w-10 h-10 bg-[#2B2B2B] flex items-center justify-center text-white hover:bg-white hover:text-black  transition-all">
+                        <a href="https://www.instagram.com/jisanahamed762" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-white font-light text-center pt-5">&copy;2022 Jisan | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="js/typed.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
