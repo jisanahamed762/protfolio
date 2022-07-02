@@ -154,17 +154,17 @@
                 <h2 class="text-center text-5xl font-semibold">Protfolio</h2>
             </div>
             <div class="buttons mx-auto w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12 mt-20 mb-10 flex justify-between flex-wrap wow fadeInUp" data-wow-duration="3s">
-                <button type="button" data-filter="all" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">All</button>
+                <button type="button" data-filter="all" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all mixitup-control-active">All</button>
                 <button type="button" data-filter=".web" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">Web design</button>
                 <button type="button" data-filter=".gra" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">Graphic</button>
                 <button type="button" data-filter=".photo" class="m-auto px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0  hover:bg-[#e1e8ed] text-black border-2 border-[#e1e8ed] transition-all">Photography</button>
             </div>
             <div class="protfolio w-full 2xl:w-10/12 m-auto md:flex md:flex-wrap mb-20">
-                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix web">
-                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio2.jpeg"><img src="images/protfolio2.jpeg" alt="protfolio2"></a>
-                </div>
                 <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix gra">
                     <a class="my-image-links" data-gall="gallery01" href="images/protfolio.jpeg"><img src="images/protfolio.jpeg" alt="protfolio"></a>
+                </div>
+                <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix web">
+                    <a class="my-image-links" data-gall="gallery01" href="images/protfolio2.jpeg"><img src="images/protfolio2.jpeg" alt="protfolio2"></a>
                 </div>
                 <div class="pro-item mx-auto w-10/12 sm:w-8/12 md:max-w-[360px] mb-5 mix web">
                     <a class="my-image-links" data-gall="gallery01" href="images/protfolio5.jpeg"><img src="images/protfolio5.jpeg" alt="protfolio5"></a>
@@ -195,10 +195,10 @@
                 <div class="w-full lg:w-8/12">
                     <form class="mx-2" action="#" method="post">
                         <div class="lg:flex justify-between mb-4">
-                            <input class="w-full p-2 mb-4 lg:mb-0 lg:mr-2 rounded-md transition-all" type="text" placeholder="Name">
-                            <input class="w-full p-2 lg:ml-2 rounded-md transition-all" type="email" placeholder="E-mail">
+                            <input class="w-full p-2 mb-4 lg:mb-0 lg:mr-2 rounded-md transition-all" type="text" placeholder="Name" required>
+                            <input class="w-full p-2 lg:ml-2 rounded-md transition-all" type="email" placeholder="E-mail" required>
                         </div>
-                        <textarea class="w-full p-2 rounded-md" rows="7" placeholder="Message"></textarea>
+                        <textarea class="w-full p-2 rounded-md" rows="7" placeholder="Message" required></textarea>
                         <button class="mt-4 p-4 bg-[#111] text-white text-xs font-medium border-2 border-[#111] hover:bg-inherit hover:text-[#111] hover:font-bold transition-all" type="submit">SEND MESSAGE</button>
                     </form>
                 </div>

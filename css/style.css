@@ -88,3 +88,6 @@ header {
     transition: all linear 0.1s;
 }
 /* service end */
+.mixitup-control-active {
+    background: #e1e8ed !important;
+}
